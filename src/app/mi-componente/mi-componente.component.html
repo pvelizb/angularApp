@@ -1,0 +1,18 @@
+<hr>
+<h1>Mi Componente</h1>
+
+<button (click)="aumentarEdad()">Aumentar</button>
+<button (click)="disminuirEdad()">Disminuir</button>
+<h3>
+   Edad: {{edad}} 
+</h3>
+
+<div *ngIf="edad >= 18">Mayor edad</div>
+<div *ngIf="edad < 18">Menor edad</div>
+
+<h3>Lista</h3>
+<ul>
+    <li *ngFor="let nombre of nombres; let i = index">
+        {{nombres[i]}}
+    </li>
+</ul>
